@@ -1,0 +1,32 @@
+<canvas width="600" height="400">
+
+
+</canvas>
+
+<script>
+
+var pantalla = document.querySelector("canvas");
+var pincel = pantalla.getContext("2d")
+
+
+//Triangulo 1
+
+pincel.fillStyle ="black";
+pincel.beginPath (); // pincel inicia un nuevo camino en el mapa
+pincel.moveTo(50,50); //  x,y centromarca el punto de inicio
+pincel.lineTo(50,400); // x,y desde donde a donde va a dibujar la linea
+pincel.lineTo(400,400); // x,y desde donde a donde va a dibujar la linea
+pincel.fill();
+
+
+//Triangulo 2
+
+pincel.fillStyle ="white";
+pincel.beginPath (); // pincel inicia un nuevo camino en el mapa
+pincel.moveTo(100,175); //  x,y centromarca el punto de inicio
+pincel.lineTo(100,350); // x,y desde donde a donde va a dibujar la linea
+pincel.lineTo(275,350); // x,y desde donde a donde va a dibujar la linea
+pincel.fill();
+
+// buscar documentacion canvas
+</script>
